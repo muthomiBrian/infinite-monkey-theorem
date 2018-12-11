@@ -15,9 +15,9 @@ def random_string(best_dict = {'best_string': ''}, target = ''):
 
   if string == '' or len(string) != len(target):
     while counter < len(target):
-      string = string + random_char()
+      new_string = new_string + random_char()
       counter = counter + 1
-    return string
+    return new_string
 
   while counter < len(target):
     if string[counter] != target[counter]:
